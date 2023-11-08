@@ -1,14 +1,14 @@
 require("dotenv").config({ path: ".env" });
 const express = require('express');
-const app = express();
-const graphqlHTTP = require('express-graphql');
+// const app = express();
+// const graphqlHTTP = require('express-graphql');
 const { ApolloServer } = require("apollo-server");
-const typeDefs = require("./api/schema");
-const resolvers = require("./api/resolver");
+const typeDefs = require("./backend/api/schema");
+const resolvers = require("./backend/api/resolver");
 const mongoose = require("mongoose");
-const db = require("./db");
-const { verifyAndGetUser } = require("./api/auth");
-const cors = require('cors');
+const db = require("./backend/db/index");
+const { verifyAndGetUser } = require("./backend/api/auth");
+// const cors = require('cors');
 
 // allow cross-origin requests
 // app.use(cors());
