@@ -6,7 +6,7 @@ const { ApolloServer } = require("apollo-server");
 const typeDefs = require("./backend/api/schema");
 const resolvers = require("./backend/api/resolver");
 const mongoose = require("mongoose");
-const db = require("./backend/db/index");
+const db = require("./backend/db");
 const { verifyAndGetUser } = require("./backend/api/auth");
 // const cors = require('cors');
 
